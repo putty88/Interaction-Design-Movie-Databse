@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Film & TV Database</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="jquery.movieSlide.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col"><img src="logo.jpg" alt="logo" height="80" width="80" onclick="window.location.href='home.html'"><h2 style="display:inline-block;" onclick="window.location.href='home.html'">Film & TV</h2></div>
+      </div>
+
+      <div class="form-group mt-3">
+        <div>
+          <a class="btn btn-primary" href="moviesPlayingNow.html">Movies Playing Now</a>
+          <a class="btn btn-primary" href="topRatedMovies.html">Top Rated Movies</a>
+          <a class="btn btn-primary" href="topRatedTv.html">Top Rated TV</a>
+        </div>
+
+        <label for="search-term">Search for movies by title:</label>
+        <input type="text" class="form-control" id="search-term">
+      </div>
+
+      <div class="form-group">
+        <button id="search-button" class="bar" disabled>Search</button>
+      </div>
+
+      <div class="row image-result-container">
+      </div>
+
+
+
+
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 id="top">Direct Manipulation</h1>
+
+          <div class="default">
+            <div class="heading">
+              <h3 class="title">Star Wars Slider</h3>
+            </div>
+            <div class="space"  style="background-color:gray">
+              <div>
+                <img class="change-poster" src="https://vignette.wikia.nocookie.net/clubpenguin/images/d/d8/Death_Star_icon.png/revision/latest?cb=20140513192400" draggable=false alt="Death Star" width="35px" height="35px"> </img>
+              </div>
+                <div class="above-Alderaan" draggable=false id="Alderaan"></div>
+                <h3>&nbsp;</h3>
+                <h3>&nbsp;</h3>
+                <h3>&nbsp;</h3>
+                <h3>&nbsp;</h3>
+                <h3>&nbsp;</h3>
+                <h3>&nbsp;</h3>
+                <h3>&nbsp;</h3>
+                <h3>&nbsp;</h3>
+                <img src = 'https://i.imgur.com/HbkCOmd.jpg' id="poster" alt="Star Wars" width="150px" height="180px"></>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+
+    <script src="api.js"></script>
+    <script src="home.js"></script>
+
+    <script src="jquery.movieSlide.js"></script>
+
+    <script>window.GiphySearchController.init()</script>
+  </body>
+</html>
